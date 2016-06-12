@@ -6,7 +6,8 @@ const propTypes = {
   inverse: PropTypes.bool,
   color: PropTypes.string,
   block: PropTypes.bool,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  className: PropTypes.any
 };
 
 const defaultProps = {
@@ -33,7 +34,7 @@ const Card = (props) => {
   );
 
   return (
-    <Tag {...attributes} className={classes}/>
+    <Tag {...attributes} className={classes} />
   );
 };
 
